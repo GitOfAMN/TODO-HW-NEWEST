@@ -32,13 +32,20 @@ export default function TodoList({
 
             <h3>Completed Todos</h3>
             {completedTodos.map(todo => (
-                <Todo 
-                key={todo._id}
-                todo={todo}
-                buttonAction={deleteTodo}
-                buttonText={'Delete'}
+                <Todo
+                    key={todo._id}
+                    todo={todo}
+                    buttonAction={deleteTodo}
+                    buttonText={'Delete'}
                 />
             ))}
+            <div class="toDoListData">
+                <ul>
+                    <li>Learn more about Reach</li>
+                    <li>Write a new Component</li>
+                    <li>Add some style</li>
+                </ul>
+            </div>
         </>
     )
 }
